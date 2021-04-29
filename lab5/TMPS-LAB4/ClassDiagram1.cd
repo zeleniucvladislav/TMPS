@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TMPS_LAB4.Core.SimpleEmployee">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAEAAAAABAAAAAwAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Core\SimpleEmployee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IEmployed" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TMPS_LAB4.Data.Director">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Director.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IEmployeeBuilder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TMPS_LAB4.Data.EmployeeService">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEIAAAAAABBAMAAAAAAAAAAAwAAEAAAAAAAAAAg=</HashCode>
+      <FileName>Data\EmployeeService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IEmployed" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TMPS_LAB4.Data.NewEmployee">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAAAAAAgAEAAAAAAAAAAEgAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Data\NewEmployee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TMPS_LAB4.Data.NewEmployeeBuilder">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAECAAAAAAAAAEAAAAAAAAAIAgEAAAAAAAAAAAAg=</HashCode>
+      <FileName>Data\NewEmployeeBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IEmployeeBuilder" />
+      <Property Name="NewEmployee" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TMPS_LAB4.Decorator.CounterSpecification">
+    <Position X="5.5" Y="7.25" Width="1.5" />
+    <AssociationLine Name="ISalarySpecification" Type="TMPS_LAB4.Interfaces.ISalarySpecification" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.281" Y="7.25" />
+        <Point X="6.281" Y="6.327" />
+        <Point X="9.188" Y="6.327" />
+        <Point X="9.188" Y="4.853" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.168" Y="1.176" Height="0.182" Width="1.293" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\CounterSpecification.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ISalarySpecification" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TMPS_LAB4.Decorator.DepartmentDirectorSpecification">
+    <Position X="12.5" Y="7.25" Width="1.5" />
+    <AssociationLine Name="ISalarySpecification" Type="TMPS_LAB4.Interfaces.ISalarySpecification" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="7.25" />
+        <Point X="13.25" Y="6.353" />
+        <Point X="10.25" Y="6.353" />
+        <Point X="10.25" Y="4.853" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.507" Y="1.21" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\DepartmentDirectorSpecification.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ISalarySpecification" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TMPS_LAB4.Decorator.ManagerSpecification">
+    <Position X="7.25" Y="7.25" Width="1.5" />
+    <AssociationLine Name="ISalarySpecification" Type="TMPS_LAB4.Interfaces.ISalarySpecification" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="7.25" />
+        <Point X="8" Y="6.841" />
+        <Point X="9.5" Y="6.841" />
+        <Point X="9.5" Y="4.853" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.036" Y="2.087" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\ManagerSpecification.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ISalarySpecification" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TMPS_LAB4.Decorator.OwnerSpecification">
+    <Position X="10.75" Y="7.25" Width="1.5" />
+    <AssociationLine Name="ISalarySpecification" Type="TMPS_LAB4.Interfaces.ISalarySpecification" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="7.25" />
+        <Point X="11.5" Y="6.601" />
+        <Point X="10" Y="6.601" />
+        <Point X="10" Y="4.853" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.521" Y="2.122" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\OwnerSpecification.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ISalarySpecification" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TMPS_LAB4.Decorator.SalaryDecorator">
+    <Position X="9" Y="7.25" Width="1.5" />
+    <AssociationLine Name="ISalarySpecification" Type="TMPS_LAB4.Interfaces.ISalarySpecification" FixedToPoint="true">
+      <Path>
+        <Point X="9.75" Y="7.25" />
+        <Point X="9.75" Y="4.853" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.026" Y="0.336" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAABAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Decorator\SalaryDecorator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ISalarySpecification" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TMPS_LAB4.Program">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABABAAAAAAAAAAAAAAAQAAAAQAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Director" />
+      <Property Name="IEmployed" />
+      <Property Name="ISalarySpecification" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="TMPS_LAB4.IEmployed">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Interfaces\IEmployed.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TMPS_LAB4.IEmployeeBuilder">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Interfaces\IEmployeeBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TMPS_LAB4.Interfaces.ISalarySpecification">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISalarySpecification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
